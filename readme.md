@@ -37,4 +37,5 @@ https://ionicframework.com/docs/native/bluetooth-serial/
 
 # Contributions
 Bitcoin: 1Bd2e8NjjGMTzULcFLQgQVFpAvUu15FJUC
+
 Paypal: http://paypal.me/razmansarit
