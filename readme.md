@@ -16,7 +16,7 @@
 
 
 
-# How do u start?
+# How to start?
 1. Install Ionic and npm
 
 2. Install ionic native bt serial. See this link:
