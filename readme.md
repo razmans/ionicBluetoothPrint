@@ -30,6 +30,7 @@ https://ionicframework.com/docs/native/bluetooth-serial/
 
 # Future TO DO
 -Print bit based data
+
 -Print bitmap images
 
 
