@@ -6,11 +6,16 @@ import { StatusBar } from '@ionic-native/status-bar';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
+import {PrinterListModalPage} from '../pages/printer-list-modal/printer-list-modal';
+
+import { PrintProvider } from '../providers/print/print';
+import { BluetoothSerial } from '@ionic-native/bluetooth-serial';
 
 @NgModule({
   declarations: [
     MyApp,
-    HomePage
+    HomePage,
+    PrinterListModalPage
   ],
   imports: [
     BrowserModule,
@@ -19,12 +24,15 @@ import { HomePage } from '../pages/home/home';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage
+    HomePage,
+    PrinterListModalPage
   ],
   providers: [
     StatusBar,
+    BluetoothSerial,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    PrintProvider
   ]
 })
 export class AppModule {}

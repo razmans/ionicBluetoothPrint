@@ -7,8 +7,22 @@
 </ion-header>
 
 <ion-content padding>
-  The world is your oyster.
-  <p>
-    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will be your guide.
-  </p>
+  Printer Selected:
+  <ion-item>{{selectedPrinter.name}}</ion-item>
+  <ion-item>
+    <button ion-button (tap)="listBTDevice()">
+      Select Printer
+    </button>
+  </ion-item>
+<ion-item>
+  <button ion-button (tap)="testConnectPrinter()">
+    Test Connection
+  </button>
+</ion-item>
+<ion-item>
+  <button ion-button (tap)="testPrinter()">
+    Test Print
+  </button>
+</ion-item>
+
 </ion-content>
